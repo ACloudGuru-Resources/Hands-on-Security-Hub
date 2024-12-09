@@ -313,11 +313,6 @@
         "DesiredCapacity" : { "Ref" : "WebServerCapacity" },
         "TargetGroupARNs" : [ { "Ref" : "ALBTargetGroup" } ]
       },
-      "CreationPolicy" : {
-        "ResourceSignal" : {
-          "Timeout" : "PT15M"
-        }
-      },
       "UpdatePolicy": {
         "AutoScalingRollingUpdate": {
           "MinInstancesInService": "1",
